@@ -1,0 +1,14 @@
+Found 1 accessibility violations:
+1) Buttons must have discernible text: https://dequeuniversity.com/rules/axe/3.5/button-name?application=axeAPI
+  a) [button[data-aura-rendered-by="\34 11\:0"]]
+    Fix any of the following:
+      Element does not have inner text that is visible to screen readers
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+      Element's default semantics were not overridden with role="presentation"
+      Element's default semantics were not overridden with role="none"
+      Element has no title attribute or the title attribute is empty
+
+
+Executed Command: var cb = arguments[arguments.length-1]; axe.run({"include":[[".bare.slds-button.slds-utility-bar__action.slds-truncate.uiButton"]]}, function (err, results) {  if (err) {    results = {      violations: [],      passes: [],      url: '',      timestamp: new Date().toString(),      errorMessage: err.message    }  }cb(results)})
+

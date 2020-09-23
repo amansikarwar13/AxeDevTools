@@ -1,0 +1,9 @@
+Found 1 accessibility violations:
+1) ARIA attributes must conform to valid values: https://dequeuniversity.com/rules/axe/3.5/aria-valid-attr-value?application=axeAPI
+  a) [span[data-aura-rendered-by="\31 604\:0"]]
+    Fix all of the following:
+      Invalid ARIA attribute value: aria-labelledby="Location"
+
+
+Executed Command: var cb = arguments[arguments.length-1]; axe.run({"include":[["#searchBodyContainer > header > div > div.search-inputs.slds-grid.slds-grid_align-center > div.cC_SearchLocationInput > div > div:nth-child(1) > span"]]}, function (err, results) {  if (err) {    results = {      violations: [],      passes: [],      url: '',      timestamp: new Date().toString(),      errorMessage: err.message    }  }cb(results)})
+

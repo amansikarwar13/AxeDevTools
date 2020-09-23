@@ -1,0 +1,134 @@
+Found 11 accessibility violations:
+1) ARIA input fields have an accessible name: https://dequeuniversity.com/rules/axe/3.5/aria-input-field-name?application=axeAPI
+  a) [#gglLkp37281087_mainlistbox-unique-id]
+    Fix any of the following:
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+      Element has no title attribute or the title attribute is empty
+
+
+2) Certain ARIA roles must contain particular children: https://dequeuniversity.com/rules/axe/3.5/aria-required-children?application=axeAPI
+  a) [#gglLkp37281087_mainlistbox-unique-id]
+    Fix any of the following:
+      Required ARIA child role not present: option
+
+
+3) ARIA attributes must conform to valid values: https://dequeuniversity.com/rules/axe/3.5/aria-valid-attr-value?application=axeAPI
+  a) [[lightning-grouped-combobox, lightning-base-combobox[data-lookup="true"], #input-4]]
+    Fix all of the following:
+      Invalid ARIA attribute value: aria-controls="dropdown-element-4"
+
+
+  b) [span[data-aura-rendered-by="\31 604\:0"]]
+    Fix all of the following:
+      Invalid ARIA attribute value: aria-labelledby="Location"
+
+
+4) autocomplete attribute must be used correctly: https://dequeuniversity.com/rules/axe/3.5/autocomplete-valid?application=axeAPI
+  a) [#gglLkp37281087_main]
+    Fix all of the following:
+      the autocomplete attribute is incorrectly formatted
+
+
+5) Buttons must have discernible text: https://dequeuniversity.com/rules/axe/3.5/button-name?application=axeAPI
+  a) [button[data-aura-rendered-by="\34 08\:0"]]
+    Fix any of the following:
+      Element does not have inner text that is visible to screen readers
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+      Element's default semantics were not overridden with role="presentation"
+      Element's default semantics were not overridden with role="none"
+      Element has no title attribute or the title attribute is empty
+
+
+6) id attribute value must be unique: https://dequeuniversity.com/rules/axe/3.5/duplicate-id?application=axeAPI
+  a) [div[data-aura-rendered-by="\32 804\:0"]]
+    Fix any of the following:
+      Document has multiple static elements with the same id attribute
+
+
+7) Form elements must have labels: https://dequeuniversity.com/rules/axe/3.5/label?application=axeAPI
+  a) [[lightning-grouped-combobox, lightning-base-combobox[data-lookup="true"], #input-4]]
+    Fix any of the following:
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+      Form element does not have an implicit (wrapped) <label>
+      Form element does not have an explicit <label>
+      Element has no title attribute or the title attribute is empty
+
+
+  b) [[c-lwc-custom-text-area, textarea]]
+    Fix any of the following:
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+      Form element does not have an implicit (wrapped) <label>
+      Form element does not have an explicit <label>
+      Element has no title attribute or the title attribute is empty
+
+
+  c) [#\32 300\:0]
+    Fix any of the following:
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+      Form element does not have an implicit (wrapped) <label>
+      Form element does not have an explicit <label>
+      Element has no title attribute or the title attribute is empty
+
+
+  d) [#\32 359\:0]
+    Fix any of the following:
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+      Form element does not have an implicit (wrapped) <label>
+      Form element does not have an explicit <label>
+      Element has no title attribute or the title attribute is empty
+
+
+8) Links must have discernible text: https://dequeuniversity.com/rules/axe/3.5/link-name?application=axeAPI
+  a) [.action-link]
+    Fix all of the following:
+      Element is in tab order and does not have accessible text
+
+    Fix any of the following:
+      Element does not have text that is visible to screen readers
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+      Element's default semantics were not overridden with role="presentation"
+      Element's default semantics were not overridden with role="none"
+
+
+9) Zooming and scaling must not be disabled: https://dequeuniversity.com/rules/axe/3.5/meta-viewport?application=axeAPI
+  a) [meta[name="viewport"]:nth-child(2)]
+    Fix any of the following:
+      user-scalable=no on <meta> tag disables zooming on mobile devices
+
+
+  b) [#vp]
+    Fix any of the following:
+      user-scalable=no on <meta> tag disables zooming on mobile devices
+
+
+10) Page must contain a level-one heading: https://dequeuniversity.com/rules/axe/3.5/page-has-heading-one?application=axeAPI
+  a) [html]
+    Fix all of the following:
+      Page must have a level-one heading
+
+
+11) All page content must be contained by landmarks: https://dequeuniversity.com/rules/axe/3.5/region?application=axeAPI
+  a) [[one-appnav, .appName]]
+    Fix any of the following:
+      Some page content is not contained by landmarks
+
+
+  b) [[one-appnav, one-app-nav-bar, #operationId-12]]
+    Fix any of the following:
+      Some page content is not contained by landmarks
+
+
+  c) [.slds-utility-bar_container]
+    Fix any of the following:
+      Some page content is not contained by landmarks
+
+
+Executed Command: var cb = arguments[arguments.length-1]; axe.run(function (err, results) {  if (err) {    results = {      violations: [],      passes: [],      url: '',      timestamp: new Date().toString(),      errorMessage: err.message    }  }cb(results)})
+
